@@ -8,7 +8,7 @@ module.exports = {
     for (let i = 0; i< questions.length; i++){
     let question = questions[i];
 
-    await queryInterface.bulkInsert('question', [{
+    await queryInterface.bulkInsert('Questions', [{
       id: question.id,
       text: question.text,
       questionImg: question.questionImg,
@@ -25,7 +25,7 @@ module.exports = {
     for (let i = 0; i< questions.length; i++){
     let question = questions[i];
 
-    await queryInterface.bulkInsert('question', [{
+    await queryInterface.bulkInsert('Questions', [{
       id: question.id,
       text: question.text,
       questionImg: question.questionImg,
@@ -42,7 +42,7 @@ module.exports = {
     for (let i = 0; i< questions.length; i++){
     let question = questions[i];
 
-    await queryInterface.bulkInsert('question', [{
+    await queryInterface.bulkInsert('Questions', [{
       id: question.id,
       text: question.text,
       questionImg: question.questionImg,
@@ -59,7 +59,7 @@ module.exports = {
     for (let i = 0; i< questions.length; i++){
     let question = questions[i];
 
-    await queryInterface.bulkInsert('question', [{
+    await queryInterface.bulkInsert('Questions', [{
       id: question.id,
       text: question.text,
       questionImg: question.questionImg,
@@ -76,7 +76,7 @@ module.exports = {
     for (let i = 0; i< questions.length; i++){
     let question = questions[i];
 
-    await queryInterface.bulkInsert('question', [{
+    await queryInterface.bulkInsert('Questions', [{
       id: question.id,
       text: question.text,
       questionImg: question.questionImg,
@@ -99,6 +99,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-     await queryInterface.bulkDelete('question', null, bulkDeleteOptions);
+     await queryInterface.bulkDelete('Questions', null, bulkDeleteOptions);
   }
 };

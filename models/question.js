@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       default: [],
     },
     correctAnswerId: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       isInt: true,
       max: 10,
       min: 0,
@@ -49,6 +49,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Question',
+    // tableName: 'question'
   });
 
   return Question; 
